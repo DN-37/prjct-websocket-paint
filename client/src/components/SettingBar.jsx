@@ -1,5 +1,4 @@
-import React from "react";
-import '../styles/toolbar.scss';
+import React from 'react';
 import toolState from "../store/toolState";
 
 const SettingBar = () => {
@@ -14,7 +13,7 @@ const SettingBar = () => {
             <label htmlFor="stroke-color">Цвет обводки</label>
             <input onChange={e => toolState.setStrokeColor(e.target.value)} id="stroke-color" type="color"/>
         </div>
-    )
-}
+    );
+};
 
 export default SettingBar;
